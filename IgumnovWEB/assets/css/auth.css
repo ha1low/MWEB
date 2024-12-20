@@ -1,0 +1,39 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    background-color: var(--cards-color);
+    padding: 2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 25rem;
+    max-width: 100%;
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 0.01rem solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.auth-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
