@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-left">
+                <h1>
+                    <a href="index.html">Food Construct</a>
+                </h1>
+                <a href="pack_a_lunch.html">Собрать ланч</a>
+                <a href="orders.html">Заказы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="nav-right">
+                <a href="auth.html" class="icon-link">
+                    <p>Авторизироваться</p>
+                </a>
+                <a href="feedback.html" class="icon-link active">
+                    <p>Обратная связь</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <form action="https://httpbin.org/post" method="POST" class="auth-form">
+                <h1>Авторизироваться</h1>
+
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" required>
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+
+                <label>
+                    <input type="checkbox" name="remember">
+                    Запомнить меня
+                </label>
+
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </main>
+    <footer id="contacts">
+        <div class="footer-content">
+            <p>Позвонить нам</p>
+            <a href="tel:+7-000-000-00-00" class="phone-link">+7-000-000-00-00</a>
+        </div>
+    </footer>
+</body>
+
+</html>
